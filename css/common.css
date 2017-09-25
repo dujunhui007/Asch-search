@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #f1f1f1;
+    background: #20242d;
+}
+
+
+
+hr{
+    margin: 10px 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #114567;
+    border-left: none;
+    border-right: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input {
+    border-radius: 20px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    out-line: none;
+    color: #ccc;
+}
+
+.bacImage {
+    display: block;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 30%;
+    min-width: 400px;
+    max-width: 800px;
+    height: 60%;
+    min-height: 300px;
+    max-height: 600px;
+    background: url("../images/painted-egg.png") no-repeat center center;
+    background-size: cover;
+    z-index:1;
+}
+
+/*.bacImage {*/
+    /*-webkit-animation: heartbeat  1s linear infinite 0.1s;*/
+    /*animation: heartbeat  1s linear infinite 0.1s;*/
+/*}*/
+
+@-webkit-keyframes heartbeat {
+0% {
+    bottom: 0%;
+    right: 0%;
+    width: 10px;
+    height: 10px;
+}
+100% {
+    bottom: 0%;
+    right: 0%;
+    width: 300px;
+    height: 400px;
+}
+}
+
+@keyframes heartbeat {
+    0% {
+        bottom: 0%;
+        right: 0%;
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        bottom: 0%;
+        right: 0%;
+        width: 800px;
+        height: 600px;
+    }
+}
+
+#loading{
+    z-index:999;
+    width:100%;
+    height: 100%;
+    padding-top: 25%;
+    text-align: center;
+    color: #00a1e1;
+    font-size: 20px;
+}
+
+table{
+    /*background: #1b1a20;*/
+    z-index: 999;
+}
+
+table tr:nth-child(odd) {
+    background: #1b1a20;
+}
+
+table tr:nth-child(even) {
+    background: #070709;
+}
+
+table tr:first-child{
+    height: 45px;
+    border-top:none;
+    background: -moz-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);
+    background: -webkit-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);
+    background: -o-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);
+    background: -ms-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);
+    background: linear-gradient(to bottom, #070709 0%,#1b1a20 100%);
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}

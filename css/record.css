@@ -1,0 +1,185 @@
+.record-container {
+    width: 60%;
+    height: 100%;
+    background: #20242d;
+    margin-left: 10%;
+    max-width: 1000px;
+}
+.record-container .transaction-record{
+    margin-top: 20px;
+}
+/*header begin */
+.record-container header {
+    position: relative;
+    width: 100%;
+    /*height: 200px;*/
+    /*background-color: #cccccc;*/
+    line-height: 60px;
+    /* padding-left: 1%; */
+}
+
+.record-container header .header-top {
+    margin-top: 10px;
+    /*background: red;*/
+    height: 70px;
+    /*line-height: 80px;*/
+    /* text-align: center; */
+    padding-top: 5px;
+}
+
+.record-container header .header-top .record-logo {
+    display: inline-block;
+    width: 250px;
+    height: 65px;
+    background: url(../images/logo2.png) no-repeat center center;
+    background-size: cover;
+    /* line-height: 40px; */
+    /* padding-left: 1%; */
+    text-align: center;
+    /* margin-left: 176px; */
+}
+
+.record-container header .header-top input {
+    width: 35%;
+    height: 30px;
+    /* margin-left: 183px; */
+    float: right;
+    margin-top: 30px;
+    background: #fff;
+    /*margin-right: 5px;*/
+    border: none;
+}
+
+.record-container header .header-top .record-search {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    background-size: contain;
+    text-align: center;
+    top: 22%;
+    right: 0%;
+    cursor: pointer;
+}
+
+.record-container header .header-top .record-search span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/bigSearch.png) no-repeat;
+    background-size: cover;
+}
+
+.record-container header .record-address {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    /*color: #fff;*/
+}
+
+.record-container header .record-address .outstanding {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    background: #ccc;
+    top: 10px;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #165076;
+    /*margin-bottom: 5px;*/
+}
+
+/*=================================*/
+
+.scroll-record ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background: #353841;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /*margin-top: 5px;*/
+}
+
+.scroll-record ul li span , a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    /* background: dodgerblue; */
+    border-radius: 3px;
+    margin: 0 2px;
+    overflow: hidden;
+}
+.scroll-record ul li .senderId{
+    width: 45%;
+    height: 40px;
+    background: #ccc;
+    margin-top: 5px;
+    color: #070709;
+    border: none;
+    border-radius: 3px;
+    /*padding-left: 10px;*/
+}
+.scroll-record ul li .recipientId{
+    width: 45%;
+    height: 40px;
+    background: #ccc;
+    margin-top: 5px;
+    color: #070709;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+.scroll-record ul li .arrow-to {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: url(../images/arrow-to.png) no-repeat center center;
+    background-size: cover;
+}
+
+.scroll-record ul li div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+    /*line-height: 40px;*/
+    /*text-align: center;*/
+}
+.scroll-record ul li .record-information span{
+    display: inline-block;
+    width: 20%;
+    max-width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #cccccc;
+    background: #000;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.scroll-record ul li .record-information span:nth-child(2){
+    background: #353841;
+}
+.scroll-record ul li .record-information span:nth-child(3){
+    color: dodgerblue;
+}

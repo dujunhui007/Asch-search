@@ -1,0 +1,139 @@
+.more-container {
+    width: 60%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.more-container header{
+    width: 100%;
+    /*height: 200px;*/
+    /*background: cadetblue;*/
+}
+.more-container header .more-logo{
+    display: block;
+    width: 250px;
+    height: 80px;
+    background: url("../images/logo2.png") no-repeat center center;
+    background-size: cover;
+}
+.more-container header .more-search{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.more-container header .more-input{
+    width: 30%;
+    height: 30px;
+}
+.more-container header .small-search{
+    position: absolute;
+    top: 25%;
+    left: 29%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    background-size: cover;
+    cursor: pointer;
+}
+.more-container header .small-search span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/smallSearch.png) no-repeat center center;
+    background-size: cover;
+}
+.more-container header .more-gross{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    color: black;
+    top: 10%;
+    right: 1%;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: none;
+}
+
+
+/*=================================================*/
+.more-container .more-table {
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/*table tr:nth-child(odd) {*/
+    /*background: #070709;*/
+/*}*/
+
+/*table tr:nth-child(even) {*/
+    /*background: #1b1a20;*/
+/*}*/
+
+.more-container .more-table tr {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.more-container .more-table tr th{
+    font-size: 15px;
+}
+
+.more-container .more-table tr td {
+    font-size: 12px;
+}
+/*===========================================*/
+.more-container .pages{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    margin-top: 10px;
+
+}
+.more-container .pages span{
+    display: inline-block;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    color: #000;
+}
+.more-container .pages .current{
+    background: none;
+    color: #f1f1f1;
+}
+.more-container .pages .omit{
+    border: none;
+    background: none;
+    color: #f1f1f1;
+}
+.more-container .pages .left{
+    width: 12px;
+    height: 12px;
+    line-height: 15px;
+    margin-right: 5px;
+    background: url(../images/left.png) no-repeat center center;
+    background-size: cover;
+    border: none;
+}
+.more-container .pages .right{
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    margin-left: 5px;
+    background: url(../images/right.png) no-repeat center center;
+    background-size: cover;
+    border: none;
+}
