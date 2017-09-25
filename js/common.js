@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 function formatDateTime(timeStamp) {
-    var stringTime = "2016/06/27 20:00:00";
+    var stringTime = "2016/06/27 24:00:00";
     var timestamp1 = Date.parse(new Date(stringTime));
     timestamp1 = timestamp1 / 1000;
     timeStamp += timestamp1;
@@ -25,3 +25,5 @@ function formatDateTime(timeStamp) {
     return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
 }
 
+var url1="http://101.200.84.232:4097/api/uia/transactions/my/";
+var url2="http://mainnet.asch.so/api/transactions/get?id=";

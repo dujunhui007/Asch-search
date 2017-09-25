@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    function num(a,b) {
-        return a+b
-    }
     function getUrlRequest() {
         var url = location.search; //获取url中"?"符后的字串
         var theRequest = new Object();
@@ -19,20 +16,20 @@ $(document).ready(function () {
         return theRequest;
     }
     var val = getUrlRequest().val;
-    console.log(val.length);
+    alert("地址长度："+val.length);
     var address = val;
     if(val.length===64){
         $.ajax({
-            url: "http://mainnet.asch.so/api/transactions/get?id=880661f1b1f828c5686df088fded77beb7b94a48896b861789d7b8ac015a5926",
+            url: url2+address,
             type: "GET",
             data: {
-                // address: val
+                address: val
             },
             dataType: "json",
             async: false,
             success: function (data) {
                 console.log(data);
-                console.log(1);
+                // console.log(1);
                 // console.log(data.transactions);
                 // var transactions;
                 // transactions = data.transactions;
@@ -66,7 +63,7 @@ $(document).ready(function () {
         });
     }else {
         $.ajax({
-            url: "http://101.200.84.232:4097/api/uia/transactions/my/" +address,
+            url: url1 +address,
             type: "GET",
             data: {
                 address: val
@@ -74,36 +71,28 @@ $(document).ready(function () {
             dataType: "json",
             async: false,
             success: function (data) {
-                console.log(data);
-                console.log(data.transactions);
-                // var transactions;
-                // transactions = data.transactions;
-                // (function () {
-                //     for (var i = 0; i < transactions.length; i++) {
-                //         // console.log(transactions[i].timestamp);
-                //         transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
-                //         // console.log(transactions[i].timestamp);
-                //         for (var j = 0; j < transactions.length - 1 - i; j++) {
-                //             if (transactions[j].timestamp < transactions[j + 1].timestamp) {
-                //                 var middle = transactions[j];
-                //                 transactions[j] = transactions[j + 1];
-                //                 transactions[j + 1] = middle;
-                //             }
-                //         }
-                //     }
-                // })();
-                // transactions = transactions.slice(0, 10);
-                // // console.log(transactions);
-                // var tableStr = "";
-                // $.each(transactions, function (i, result) {
-                //     tableStr += "  <tr>\n" +
-                //         "        <td>" + result.senderId + "</td>\n" +
-                //         "        <td>" + result.timestamp + "</td>\n" +
-                //         "        <td>" + result.recipientId + "</td>\n" +
-                //         "        <td>" + result.asset.uiaTransfer.amountShow + "</td>\n" +
-                //         "    </tr>";
-                // });
-                // $('.record-table').append(tableStr);
+                // console.log(data.transactions);
+                var transactions;
+                transactions = (data.transactions).reverse();
+                (function () {
+                    for (var i = 0; i < transactions.length; i++) {
+                        transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
+                    }
+                })();
+                transactions = transactions.slice(0, 10);
+                console.log(transactions);
+                var tableStr = "";
+                $.each(transactions, function (i, result) {
+                    if(result.asset.uiaIssue){
+                    tableStr += "  <tr>\n" +
+                        "        <td>" + result.senderId + "</td>\n" +
+                        "        <td>" + result.timestamp + "</td>\n" +
+                        "        <td>" + result.recipientId + "</td>\n" +
+                        "        <td>" + result.asset.uiaIssue.amountShow + "</td>\n" +
+                        "    </tr>";
+                    }
+                });
+                $('.record-table').append(tableStr);
             }
         });
     }
