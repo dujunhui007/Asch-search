@@ -3,6 +3,7 @@
     height: 100%;
     margin-left: 10%;
     margin-top: 10px;
+    min-width: 670px;
 }
 
 .more-container header{
