@@ -3,6 +3,7 @@
     height: 100%;
     margin-left: 10%;
     margin-top: 10px;
+    min-width: 650px;
 }
 
 .particular-container header {
