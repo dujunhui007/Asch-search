@@ -6,8 +6,6 @@ $(document).ready(function () {
         dataType: "json",
         async: false,
         success: function (data) {
-            // console.log(data);
-            // alert(data.asset);
             $('#currentInformation').empty();
             var result = data.asset;
             var ulStr = "";
@@ -52,29 +50,27 @@ $(document).ready(function () {
     $.ajax({
         url: "http://45.32.254.236/api/uia/transactions2/ABSORB.YLB",
         type: "GET",
-        data: {"page": 0},
+        data: {},
         dataType: "json",
         async: false,
         success: function (data) {
-            // console.log(data);
             var transactions;
-            transactions = data.transactions;
+            transactions = (data.transactions).reverse();
             (function () {
                 for (var i = 0, len = transactions.length; i < len; i++) {
                     // console.log(transactions[i].timestamp);
                     transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
                     // console.log(transactions[i].timestamp);
-                    for (var j = 0; j < transactions.length - 1 - i; j++) {
-                        if (transactions[j].timestamp < transactions[j + 1].timestamp) {
-                            var middle = transactions[j];
-                            transactions[j] = transactions[j + 1];
-                            transactions[j + 1] = middle;
-                        }
-                    }
+                    // for (var j = 0; j < transactions.length - 1 - i; j++) {
+                    //     if (transactions[j].timestamp < transactions[j + 1].timestamp) {
+                    //         var middle = transactions[j];
+                    //         transactions[j] = transactions[j + 1];
+                    //         transactions[j + 1] = middle;
+                    //     }
+                    // }
                 }
             })();
             transactions = transactions.slice(0, 10);
-            console.log(transactions);
             var tableStr = "";
             $.each(transactions, function (i, result) {
                 tableStr += "  <tr>\n" +
@@ -90,17 +86,18 @@ $(document).ready(function () {
 
     $(".header-search").click(function () {
         var val = $(".header-input").val();
-        if (val) {
-            alert("获取到的value：" + val);
-                window.location.href = "record.html"+"?" + "val" + "=" + val;
-        }else {
+
+        if (val.length==64) {
+            window.location.href = "record.html"+"git?" + "id" + "=" + val;
+        }else if(val.length==0){
             layer.open({
                 title: '搜索栏为空',
                 content: '请在搜索栏输入您要查找的ID、交易ID或地址！！！'
             });
+        } else {
+            window.location.href = "record.html"+"?" + "val" + "=" + val;
         }
     });
-
 
 });
 

@@ -53,20 +53,20 @@
 .record-container header .header-top .record-search {
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: #ffffff;
     background-size: contain;
     text-align: center;
     top: 22%;
-    right: 0%;
+    right: 1%;
     cursor: pointer;
 }
 
 .record-container header .header-top .record-search span{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: url(../images/bigSearch.png) no-repeat;
     background-size: cover;
 }
