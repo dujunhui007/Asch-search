@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 function formatDateTime(timeStamp) {
-    var stringTime = "2016/06/27 24:00:00";
+    var stringTime = "2016/06/27 00:00:00";
     var timestamp1 = Date.parse(new Date(stringTime));
     timestamp1 = timestamp1 / 1000;
     timeStamp += timestamp1;
