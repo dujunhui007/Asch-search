@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    function num(a,b) {
+        return a+b
+    }
     function getUrlRequest() {
         var url = location.search; //获取url中"?"符后的字串
         var theRequest = new Object();
@@ -29,6 +32,7 @@ $(document).ready(function () {
             async: false,
             success: function (data) {
                 console.log(data);
+                console.log(1);
                 // console.log(data.transactions);
                 // var transactions;
                 // transactions = data.transactions;
