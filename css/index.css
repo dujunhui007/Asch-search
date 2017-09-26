@@ -13,6 +13,8 @@ hr {
     height: 100%;
     margin-left: 10%;
     margin-top: 20px;
+    min-width: 670PX;
+    z-index: 2;
 }
 
 /*============================header begin*/

@@ -15,6 +15,7 @@
     /*height: 200px;*/
     /*background-color: #cccccc;*/
     line-height: 60px;
+    min-width: 670px;
     /* padding-left: 1%; */
 }
 
@@ -115,6 +116,7 @@ h4 {
 
 /*=================================*/
 
+<<<<<<< HEAD
 
 .record-container .scroll-record{
     width: 100%;
@@ -130,6 +132,12 @@ h4 {
     height: 100%;
     border-radius: 10px;
 }
+=======
+.scroll-record{
+    min-width: 670px;
+}
+
+>>>>>>> 5c0003363b6787501179be46974e6df02f9241c2
 .scroll-record ul li {
     width: 100%;
     display: flex;
