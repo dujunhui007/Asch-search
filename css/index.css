@@ -29,12 +29,13 @@ hr {
 
 .container header .header-logo {
     display: block;
+    /*width: 270px;*/
+    /*height: 210px;*/
     width: 210px;
     height: 150px;
-    background: url(../images/logo1.png) no-repeat center center;
+    background: url(../images/logo_1.png) no-repeat center center;
     background-size: cover;
     margin: 0 auto;
-
 }
 
 .container header .header-input {

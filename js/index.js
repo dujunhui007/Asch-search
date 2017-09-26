@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: "http://45.32.254.236/api/uia/assets/ABSORB.YLB",
+        url: url3,
         type: "GET",
         data: {},
         dataType: "json",
@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: "http://45.32.254.236/api/uia/transactions2/ABSORB.YLB",
+        url: url4,
         type: "GET",
         data: {},
         dataType: "json",
@@ -58,16 +58,7 @@ $(document).ready(function () {
             transactions = (data.transactions).reverse();
             (function () {
                 for (var i = 0, len = transactions.length; i < len; i++) {
-                    // console.log(transactions[i].timestamp);
                     transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
-                    // console.log(transactions[i].timestamp);
-                    // for (var j = 0; j < transactions.length - 1 - i; j++) {
-                    //     if (transactions[j].timestamp < transactions[j + 1].timestamp) {
-                    //         var middle = transactions[j];
-                    //         transactions[j] = transactions[j + 1];
-                    //         transactions[j + 1] = middle;
-                    //     }
-                    // }
                 }
             })();
             transactions = transactions.slice(0, 10);
@@ -81,27 +72,46 @@ $(document).ready(function () {
                     "    </tr>";
             });
             $('.record-table').append(tableStr);
+        },
+        error: function () {
+            layer.open({
+                title: '请求数据失败',
+                content: '对不起，后台数据正在紧急修复中...'
+            });
         }
     });
 
     $(".header-search").click(function () {
         var val = $(".header-input").val();
-
-        if (val.length==64) {
-            window.location.href = "record.html"+"git?" + "id" + "=" + val;
-        }else if(val.length==0){
+        if (val.length == 64) {
+            window.location.href = "record.html" + "git?" + "id" + "=" + val;
+        } else if (val.length == 0) {
             layer.open({
                 title: '搜索栏为空',
                 content: '请在搜索栏输入您要查找的ID、交易ID或地址！！！'
             });
         } else {
-            window.location.href = "record.html"+"?" + "val" + "=" + val;
+            window.location.href = "record.html" + "?" + "val" + "=" + val;
+        }
+    });
+
+    $(".header-input").focus();
+
+    $(".header-input").keydown(function () {//给输入框绑定按键事件
+        if (event.keyCode == "13") {//判断如果按下的是回车键则执行下面的代码
+            var val = $(".header-input").val();
+            if (val.length == 64) {
+                window.location.href = "record.html" + "git?" + "id" + "=" + val;
+            } else if (val.length == 0) {
+                layer.open({
+                    title: '搜索栏为空',
+                    content: '请在搜索栏输入您要查找的ID、交易ID或地址！！！'
+                });
+            } else {
+                window.location.href = "record.html" + "?" + "val" + "=" + val;
+            }
         }
     });
 
 });
-
-
-
-
 

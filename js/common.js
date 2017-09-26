@@ -5,8 +5,8 @@ $(document).ready(function(){
 });
 
 function formatDateTime(timeStamp) {
-    var stringTime = "2016/06/27 00:00:00";
-    var timestamp1 = Date.parse(new Date(stringTime));
+    // var stringTime = "2016/09/27 20:00:00";
+    var timestamp1 = new Date(Date.UTC(2016, 5, 27, 20, 0, 0, 0));
     timestamp1 = timestamp1 / 1000;
     timeStamp += timestamp1;
     var date = new Date();
@@ -25,5 +25,14 @@ function formatDateTime(timeStamp) {
     return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
 }
 
+
+
+
 var url1="http://101.200.84.232:4097/api/uia/transactions/my/";
 var url2="http://mainnet.asch.so/api/transactions/get?id=";
+var url3="http://45.32.254.236/api/uia/assets/ABSORB.YLB";
+var url4="http://45.32.254.236/api/uia/transactions2/ABSORB.YLB";
+var url5="http://101.200.84.232:4097/api/uia/balances/";
+
+
+
