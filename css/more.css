@@ -70,12 +70,8 @@
     color: #ccc;
 }
 
-/*table tr:nth-child(odd) {*/
-    /*background: #070709;*/
-/*}*/
-
-/*table tr:nth-child(even) {*/
-    /*background: #1b1a20;*/
+/*body{*/
+    /*android:descendantFocusability="afterDescendants"*/
 /*}*/
 
 .more-container .more-table tr {

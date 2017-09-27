@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // 渲染最近交易记录数据
     $.ajax({
         url: url4,
@@ -11,37 +10,43 @@ $(document).ready(function () {
             var transactions = data.transactions;
             var total = 0;
             var pageCount;
-            var currentCount;
             var startTransactions;
             var clickTransactions;
+            var transactionsLen = transactions.length;
 
-            if (transactions && transactions.length > 0) {
-                console.log(transactions.length);
-                if (transactions.length % 10 > 0) {
-                    pageCount = Math.ceil(transactions.length / 10);
-                    console.log(pageCount);
+            var tabStr = function () {
+                var tableStr = "";
+                $.each(clickTransactions, function (i, result) {
+                    tableStr += "  <tr>\n" +
+                        "        <td>" + result.senderId + "</td>\n" +
+                        "        <td>" + result.timestamp + "</td>\n" +
+                        "        <td>" + result.recipientId + "</td>\n" +
+                        "        <td>" + result.asset.uiaTransfer.amountShow + "</td>\n" +
+                        "    </tr>";
+                });
+                $('.more-table-tbody').append(tableStr);
+            };
+
+            if (transactions && transactionsLen > 0) {
+                // console.log(transactionsLen);
+                if (transactionsLen % 10 > 0) {
+                    pageCount = Math.ceil(transactionsLen / 10);
+                    // console.log(pageCount);
                 } else {
                     pageCount = transactions.length / 10;
-                    console.log(pageCount);
+                    // console.log(pageCount);
                 }
             }
 
-            $(".tcdPageCode").createPage({
-                pageCount: pageCount,
-                current: 1,
-                backFn: function (p) {
-
-                }
-            });
             (function () {
-                for (var i = 0, len = transactions.length; i < len; i++) {
+                for (var i = 0; i < transactions.length; i++) {
                     if (transactions[i].asset.uiaTransfer.amountShow && !isNaN((transactions[i].asset.uiaTransfer.amountShow))) {
                         total = total + parseFloat(transactions[i].asset.uiaTransfer.amountShow);
                     }
                     transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
                 }
             })();
-            transactions=transactions.reverse();
+            transactions = transactions.reverse();
             startTransactions = transactions.slice(0, 10);
             var tableStr = "";
             var grossStr = "";
@@ -57,49 +62,71 @@ $(document).ready(function () {
                     "    </tr>";
             });
             $('.more-table-tbody').append(tableStr);
-            console.log($(".tcdPageCode").find("a"));
-            currentCount=$(".tcdPageCode").find(".current").text();
-            // console.log($(".tcdPageCode").children("a"));
 
-            // function pageCount() {
-            //
-            // }
+            function clickCount() {
+                $(".tcdPageCode").find("a").click(function () {
+                    // console.log(arguments);
+                    var aVal;
+                    aVal = $(this).text();
+                    // alert(aVal);
+                    // console.log($(".tcdPageCode").find("a"));
+                    $('.more-table-tbody  tr').remove();
 
-            $(".tcdPageCode").find("a").click(function () {
-                console.log($(".tcdPageCode").find("a"));
-                $('.more-table-tbody  tr').remove();
-                alert($(this).text());
-                // $(this).click(function () {
-                //
-                // });
-                var startCount=($(this).text()-1)*10;
-                var endCount=startCount+10;
-                // console.log(startCount);
-                // console.log(endCount);
-                clickTransactions = transactions.slice(startCount,endCount);
-                // console.log(clickTransactions);
-                // (function () {
-                //     for (var i = 0, len = clickTransactions.length; i < len; i++) {
-                //         if (clickTransactions[i].asset.uiaTransfer.amountShow && !isNaN((clickTransactions[i].asset.uiaTransfer.amountShow))) {
-                //             total = total + parseFloat(clickTransactions[i].asset.uiaTransfer.amountShow);
-                //         }
-                //         clickTransactions[i].timestamp = formatDateTime(clickTransactions[i].timestamp);
-                //     }
-                // })();
-                var tableStr = "";
-                $.each(clickTransactions, function (i, result) {
-                    tableStr += "  <tr>\n" +
-                        "        <td>" + result.senderId + "</td>\n" +
-                        "        <td>" + result.timestamp + "</td>\n" +
-                        "        <td>" + result.recipientId + "</td>\n" +
-                        "        <td>" + result.asset.uiaTransfer.amountShow + "</td>\n" +
-                        "    </tr>";
+                    if (aVal == pageCount) {
+                        var startCount1;
+                        // $('.more-table-tbody  tr').remove();
+                        startCount1 = (aVal - 1) * 10;
+                        clickTransactions = transactions.slice(startCount1, transactions.length);
+                    } else if (aVal == 1) {
+                        clickTransactions = transactions.slice(0, 10);
+                    } else {
+                        var startCount2, endCount2;
+                        startCount2 = (aVal - 1) * 10;
+                        endCount2 = startCount2 + 10;
+                        clickTransactions = transactions.slice(startCount2, endCount2);
+                    }
+                    tabStr();
                 });
-                $('.more-table-tbody').append(tableStr);
 
+                $(".prevPage").click(function () {
+                    var currentVal, endCount;
+                    currentVal = parseInt($(".current").text()) - 1;
+                    // alert(currentVal);
 
-            });
+                    $('.more-table-tbody  tr').remove();
+                    currentVal = (currentVal - 1) * 10;
+                    endCount = currentVal + 10;
+                    clickTransactions = transactions.slice(currentVal, endCount);
+                    // console.log(clickTransactions);
 
+                    tabStr();
+                });
+
+                $(".nextPage").click(function () {
+                    var currentVal;
+                    currentVal = parseInt($(".current").text()) + 1;
+                    // alert(currentVal);
+
+                    $('.more-table-tbody  tr').remove();
+                    currentVal = (currentVal - 1) * 10;
+                    endCount = currentVal + 10;
+                    clickTransactions = transactions.slice(currentVal, endCount);
+                    // console.log(clickTransactions);
+
+                    tabStr();
+                })
+            }
+
+            if (transactions.length > 11) {
+                $(".tcdPageCode").createPage({
+                    pageCount: pageCount,
+                    current: 1,
+                    backFn: function (p) {
+                        clickCount();
+                    }
+                });
+            }
+            clickCount();
         },
         error: function () {
             layer.open({
@@ -147,7 +174,6 @@ $(document).ready(function () {
             }
         }
     });
-
 });
 
 

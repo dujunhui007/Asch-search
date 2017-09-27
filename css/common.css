@@ -134,8 +134,10 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
     background: #1b1a20;
 }
-
-table tr:first-child{
+.more-table .more-table-top th{
+    height: 45px;
+}
+table thead tr:first-child{
     height: 45px;
     border-top:none;
     background: -moz-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);

@@ -46,66 +46,23 @@ $(document).ready(function () {
             });
         } else {
             $.ajax({
-                url: url1 + address + "?offset=0&limit=100",
+                url: url1 + address,
                 type: "GET",
                 data: {
                     address: val
                 },
                 dataType: "json",
                 async: false,
+                beforeSend: function (xmlHttp) {
+                    xmlHttp.setRequestHeader("If-Modified-Since", "0");
+                    xmlHttp.setRequestHeader("Cache-Control", "no-cache");
+                },
                 success: function (data) {
-                    var transactions = data.transactions;
+                    var transactions;
+                    var recordLiStr = "";
+                    transactions = data.transactions;
                     var fee = "手续费: 0.1 XAS";
-                    var transactionsLen = transactions.length;
-                    var pageCount;
-                    var startTransactions;
-                    var clickTransactions;
-
-                    if (transactions && transactionsLen > 0) {
-                        if (transactionsLen % 10 > 0) {
-                            pageCount = Math.ceil(transactionsLen / 10);
-                        } else {
-                            pageCount = transactionsLen / 10;
-                        }
-                    }
-
-                    if (transactions && transactionsLen != 0) {
-                        transactions = transactions.reverse();
-
-                        for (var i = 0, len = transactions.length; i < len; i++) {
-                            transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
-                        }
-
-                        var recordStr = function () {
-                            var recordStr = "";
-                            $.each(clickTransactions, function (i, result) {
-                                if (result.asset.uiaTransfer) {
-                                    recordStr += " <li>\n" +
-                                        "                <div>\n" +
-                                        "                    <a href=\"#\">" + result.id + "</a>\n" +
-                                        "                    <p>" + result.timestamp + "</p>\n" +
-                                        "                </div>\n" +
-                                        "                <div>\n" +
-                                        "                    <div class=\"senderId\">\n" +
-                                        "                        <span>" + result.senderId + "</span>\n" +
-                                        "                    </div>\n" +
-                                        "                    <span class=\"arrow-to\"></span>\n" +
-                                        "                    <div class=\"recipientId\">\n" +
-                                        "                        <span>" + result.recipientId + "</span>\n" +
-                                        "                    </div>\n" +
-                                        "                </div>\n" +
-                                        "                <div class=\"record-information\">\n" +
-                                        "                    <span>" + fee + "</span>\n" +
-                                        "                    <span></span>\n" +
-                                        "                    <span>" + result.confirmations + " 确认数" + "</span>\n" +
-                                        "                    <span>" + result.asset.uiaTransfer.amountShow + " XAS " + "</span>\n" +
-                                        "                </div>\n" +
-                                        "            </li>";
-                                }
-                            });
-                            $('.scroll-record-container').append(recordStr);
-                        };
-
+                    if (transactions && transactions.length != 0) {
                         $.ajax({
                             url: url5 + address,
                             type: "GET",
@@ -128,10 +85,11 @@ $(document).ready(function () {
                             }
                         });
 
-                        startTransactions = transactions.slice(0, 10);
-
-                        var recordLiStr = "";
-                        $.each(startTransactions, function (i, result) {
+                        for (var i = 0, len = transactions.length; i < len; i++) {
+                            transactions[i].timestamp = formatDateTime(transactions[i].timestamp);
+                        }
+                        transactions = transactions.reverse().slice(0, 10);
+                        $.each(transactions, function (i, result) {
                             if (result.asset.uiaTransfer) {
                                 recordLiStr += " <li>\n" +
                                     "                <div>\n" +
@@ -157,89 +115,6 @@ $(document).ready(function () {
                             }
                         });
                         $('.scroll-record-container').append(recordLiStr);
-
-
-                        function clickCount() {
-                            $(".recordPages").find("a").click(function () {
-                                $('.scroll-record-container  li').remove();
-                                var aVal;
-                                aVal = $(this).text();
-
-                                if (aVal == pageCount) {
-                                    var startCount1;
-                                    startCount1 = (aVal - 1) * 10;
-                                    clickTransactions = transactions.slice(startCount1, transactions.length);
-                                } else if (aVal == 1) {
-                                    clickTransactions = transactions.slice(0, 10);
-                                } else {
-                                    var startCount2, endCount2;
-                                    startCount2 = (aVal - 1) * 10;
-                                    endCount2 = startCount2 + 10;
-
-                                    clickTransactions = transactions.slice(startCount2, endCount2);
-                                }
-                                recordStr();
-                            });
-
-                            $(".prevPage").click(function () {
-                                var currentVal, endCount;
-                                currentVal = parseInt($(".current").text()) - 1;
-
-                                $('.scroll-record-container  li').remove();
-                                currentVal = (currentVal - 1) * 10;
-                                endCount = currentVal + 10;
-                                clickTransactions = transactions.slice(currentVal, endCount);
-
-                                recordStr();
-                            });
-
-                            $(".nextPage").click(function () {
-                                var currentVal;
-                                currentVal = parseInt($(".current").text()) + 1;
-                                // alert(currentVal);
-
-                                $('.scroll-record-container  li').remove();
-                                currentVal = (currentVal - 1) * 10;
-                                endCount = currentVal + 10;
-                                clickTransactions = transactions.slice(currentVal, endCount);
-                                console.log(clickTransactions);
-
-                                recordStr();
-                            });
-
-                            $(".senderId").click(function () {
-                                var senderIdText = $(this).find("span").text();
-                                senderIdText = senderIdText.replace(/\s+/g, "");
-                                window.location.href = "record.html" + "?" + "val" + "=" + senderIdText;
-                                recordSearch();
-                            });
-
-                            $(".recipientId").click(function () {
-                                var recipientIdText = $(this).find("span").text();
-                                recipientIdText = recipientIdText.replace(/\s+/g, "");
-                                window.location.href = "record.html" + "?" + "val" + "=" + recipientIdText;
-                                recordSearch();
-                            });
-
-                            $(".scroll-record-container").find("a").click(function () {
-                                var recipientIdText = $(this).text();
-                                recipientIdText = recipientIdText.replace(/\s+/g, "");
-                                window.location.href = "particular.html" + "?" + "val" + "=" + recipientIdText;
-                            });
-                        }
-
-
-                        if (transactions.length > 11) {
-                            $(".recordPages").createPage({
-                                pageCount: pageCount,
-                                current: 1,
-                                backFn: function (p) {
-                                    clickCount();
-                                }
-                            });
-                        }
-                        clickCount();
-
                     } else {
                         var addressStr1 = "";
                         addressStr1 = "<span class=\"record-empty\">" + "未搜索到当前地址的交易记录..." + "</span>";
@@ -259,7 +134,6 @@ $(document).ready(function () {
                             content: '您输入的地址不正确，或者截止到目前交易记录为空！！！'
                         });
                     }
-
                 },
                 error: function (data) {
                     layer.open({
@@ -328,16 +202,10 @@ $(document).ready(function () {
     });
 
     $(".recipientId").click(function () {
-        var recipientIdText = $(this).find("span").text();
+        var recipientIdText =  $(this).find("span").text();
         recipientIdText = recipientIdText.replace(/\s+/g, "");
         window.location.href = "record.html" + "?" + "val" + "=" + recipientIdText;
         recordSearch();
-    });
-
-    $(".scroll-record-container").find("a").click(function () {
-        var recipientIdText = $(this).text();
-        recipientIdText = recipientIdText.replace(/\s+/g, "");
-        window.location.href = "particular.html" + "?" + "val" + "=" + recipientIdText;
     });
 });
 

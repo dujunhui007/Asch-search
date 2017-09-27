@@ -1,9 +1,9 @@
-
 (function ($) {
     var ms = {
         init: function (obj, args) {
             return (function () {
                 ms.fillHtml(obj, args);
+                obj.off("click");
                 ms.bindEvent(obj, args);
             })();
         },
@@ -95,8 +95,3 @@
         ms.init(this, args);
     }
 })(jQuery);
-
-
-
-
-

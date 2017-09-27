@@ -195,6 +195,7 @@ input::-ms-clear, ::-ms-reveal{
 }
 .container .last-sale h3{
     color: dodgerblue;
+    font-size: 18px;
 }
 .container .last-sale .see-more {
     display: inline-block;
