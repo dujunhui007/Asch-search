@@ -15,6 +15,7 @@ hr {
     margin-top: 20px;
     min-width: 670PX;
     z-index: 2;
+    margin-bottom: 80px;
 }
 
 /*============================header begin*/
@@ -223,13 +224,14 @@ input::-ms-clear, ::-ms-reveal{
 }
 
 table tr:nth-child(odd) {
-    background: #1b1a20;
+
+    background: #070709;
 }
 
 table tr:nth-child(even) {
-    background: #070709;
+    background: #1b1a20;
 }
-.container .record-table .record-table-top{
+.container .record-table .record-table-top tr{
     height: 45px;
     border-top:none;
     background: -moz-linear-gradient(to bottom, #070709 0%,#1b1a20 100%);

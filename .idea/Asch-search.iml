@@ -7,6 +7,10 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+    <content url="file://$USER_HOME$/Desktop/JQ插件/jQueryPager20160918" />
+    <content url="file://$USER_HOME$/Desktop/JQ插件/pagination" />
+    <content url="file://$USER_HOME$/Desktop/pageAjax" />
+    <content url="file://$USER_HOME$/Desktop/pages" />
     <content url="file://C:/pagerDemo" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

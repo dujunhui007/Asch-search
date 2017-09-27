@@ -71,7 +71,7 @@ $(document).ready(function () {
                     "        <td>" + result.asset.uiaTransfer.amountShow + "</td>\n" +
                     "    </tr>";
             });
-            $('.record-table').append(tableStr);
+            $('.record-table .record-table-tbody').append(tableStr);
         },
         error: function () {
             layer.open({
