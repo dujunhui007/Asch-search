@@ -18,12 +18,10 @@ hr {
     margin-bottom: 80px;
 }
 
-/*============================header begin*/
 .container header {
     width: 96%;
     margin-left: 2%;
     height: 240px;
-    /* background: #ccc; */
     padding-top: 20px;
     text-align: center;
     position: relative;
@@ -32,8 +30,6 @@ hr {
 
 .container header .header-logo {
     display: block;
-    /*width: 270px;*/
-    /*height: 210px;*/
     width: 210px;
     height: 150px;
     background: url(../images/logo_1.png) no-repeat center center;
@@ -44,7 +40,6 @@ hr {
 .container header .header-input {
     width: 40%;
     height: 30px;
-    /*margin-top: 0;*/
     border-radius: 20px;
     padding: 0 10px;
     border: none;
@@ -58,7 +53,6 @@ input::-ms-clear, ::-ms-reveal{
     width: 25px;
     height: 25px;
     bottom: -1px;
-    /* border-right: none; */
     right: 31%;
     background: #ffffff;
     background-size: cover;
@@ -71,7 +65,7 @@ input::-ms-clear, ::-ms-reveal{
     background: url(../images/bigSearch.png) no-repeat center center;
     background-size: cover;
 }
-/*===========================================header end*/
+
 .container ul {
     width: 96%;
     height: 80px;
@@ -95,10 +89,7 @@ input::-ms-clear, ::-ms-reveal{
     -moz-box-align: center;
     -webkit-box-align: center;
     align-items: center;
-    /* margin: 10px auto; */
     margin-left: 2%;
-    /* margin: 1%; */
-    /* background: yellow; */
     margin-bottom: 2%;
 }
 
@@ -120,12 +111,9 @@ input::-ms-clear, ::-ms-reveal{
     width: 13%;
     max-width: 200px;
     height: 60px;
-    /*border:1px solid #1b1a20;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-right: 5px;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
     overflow: hidden;
     color: #f1f1f1;
     font-size: 12px;
@@ -160,9 +148,6 @@ input::-ms-clear, ::-ms-reveal{
     background: #070709;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
 }
 .container ul li p:hover{
 
@@ -175,7 +160,6 @@ input::-ms-clear, ::-ms-reveal{
     flex-grow: 1;
     margin-right: 5px;
     background: #070709;
-    /*border:1px solid #1b1a20;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     z-index: 99999;
@@ -190,7 +174,6 @@ input::-ms-clear, ::-ms-reveal{
     height: 40px;
     margin-left: 2%;
     line-height: 40px;
-    /* background: #cccccc; */
     position: relative;
 }
 .container .last-sale h3{
@@ -216,12 +199,10 @@ input::-ms-clear, ::-ms-reveal{
     right: -20px;
 }
 
-/*=============================================table*/
+
 .container .record-table {
     width: 96%;
     margin: 1% 0 1% 2%;
-    /*color: #ccc;*/
-    /*z-index: 999;*/
 }
 
 table tr:nth-child(odd) {
@@ -262,7 +243,13 @@ table tr:nth-child(even) {
 .container .record-table tr th{
     font-size: 15px;
 }
+.container .record-table tr td.indexSenderId{
+    cursor: pointer;
+}
 
+.container .record-table tr td.indexRecipientId{
+    cursor: pointer;
+}
 .container .record-table tr td {
     font-size: 12px;
     max-width: 200px;

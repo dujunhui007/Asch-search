@@ -8,23 +8,17 @@
 .transaction-record{
     margin-top: 20px;
 }
-/*header begin */
+
 .record-container header {
     position: relative;
     width: 100%;
-    /*height: 200px;*/
-    /*background-color: #cccccc;*/
     line-height: 60px;
     min-width: 670px;
-    /* padding-left: 1%; */
 }
 
 .record-container header .header-top {
     margin-top: 10px;
-    /*background: red;*/
     height: 70px;
-    /*line-height: 80px;*/
-    /* text-align: center; */
     padding-top: 5px;
 }
 
@@ -34,20 +28,15 @@
     height: 65px;
     background: url(../images/logo2.png) no-repeat center center;
     background-size: cover;
-    /* line-height: 40px; */
-    /* padding-left: 1%; */
     text-align: center;
-    /* margin-left: 176px; */
 }
 
 .record-container header .header-top input {
     width: 35%;
     height: 30px;
-    /* margin-left: 183px; */
     float: right;
     margin-top: 30px;
     background: #fff;
-    /*margin-right: 5px;*/
     border: none;
 }
 
@@ -76,7 +65,6 @@
     position: relative;
     height: 50px;
     line-height: 50px;
-    /*color: #fff;*/
 }
 .record-container header .record-address .record-skip{
     display: inline-block;
@@ -111,10 +99,7 @@ h4 {
     margin: 10px 0;
     font-size: 16px;
     color: #165076;
-    /*margin-bottom: 5px;*/
 }
-
-/*=================================*/
 
 
 .record-container .scroll-record{
@@ -146,7 +131,6 @@ h4 {
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 20px;
-    /*margin-top: 5px;*/
 }
 
 .scroll-record ul li span , a {
@@ -157,10 +141,8 @@ h4 {
     text-align: center;
     font-size: 12px;
     border: none;
-    /* background: dodgerblue; */
     border-radius: 3px;
     margin: 0 2px;
-    /*overflow: hidden;*/
 }
 .scroll-record ul li .senderId{
     width: 45%;
@@ -171,7 +153,6 @@ h4 {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    /*padding-left: 10px;*/
 }
 .scroll-record ul li .recipientId{
     width: 45%;
@@ -208,8 +189,6 @@ h4 {
     justify-content: space-between;
     flex-direction: row;
     height: 60px;
-    /*line-height: 40px;*/
-    /*text-align: center;*/
 }
 .scroll-record ul li div p{
     display: inline-block;
@@ -246,7 +225,6 @@ h4 {
 }
 
 
-/*==================================*/
 .recordPages {
     padding: 10px 20px;
     color: #ccc;
@@ -260,8 +238,6 @@ h4 {
     width: 25px;
     text-align: center;
     line-height: 25px;
-    /* padding: 0px 10px; */
-    /* border: 1px solid #ddd; */
     margin: 0px 2px;
     border-radius: 4px;
     vertical-align: middle;
@@ -270,7 +246,6 @@ h4 {
 
 .recordPages a:hover {
     text-decoration: none;
-    /*border: 1px solid #428bca;*/
 }
 
 .recordPages span.current {
@@ -279,7 +254,6 @@ h4 {
     width: 25px;
     line-height: 25px;
     text-align: center;
-    /* padding: 0 10px; */
     margin: 0 2px;
     color: #ccc;
     background-color: #070709;
@@ -304,8 +278,6 @@ h4 {
     height: 20px;
     width: 20px;
     line-height: 20px;
-    /* padding: 0 10px; */
-    /* margin: 0 2px; */
     background: url(../images/left.png) no-repeat center center;
     background-size: cover;
     border-radius: 4px;
@@ -329,7 +301,6 @@ h4 {
     height: 20px;
     width: 20px;
     line-height: 20px;
-    /* padding: 0 10px; */
     margin: 0 2px;
     background: url(../images/right.png) no-repeat center center;
     background-size: cover;

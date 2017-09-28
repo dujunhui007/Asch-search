@@ -3,7 +3,7 @@
         init: function (obj, args) {
             return (function () {
                 ms.fillHtml(obj, args);
-                obj.off("click");
+                // obj.off("click");
                 ms.bindEvent(obj, args);
             })();
         },

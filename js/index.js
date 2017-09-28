@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: url3,
+        url: urlAsset,
         type: "GET",
         data: {},
         dataType: "json",
@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: url4,
+        url: urlYLB,
         type: "GET",
         data: {},
         dataType: "json",
@@ -65,9 +65,9 @@ $(document).ready(function () {
             var tableStr = "";
             $.each(transactions, function (i, result) {
                 tableStr += "  <tr>\n" +
-                    "        <td>" + result.senderId + "</td>\n" +
-                    "        <td>" + result.timestamp + "</td>\n" +
-                    "        <td>" + result.recipientId + "</td>\n" +
+                    "        <td class=\"indexSenderId\">" + result.senderId + "</td>\n" +
+                    "        <td >" + result.timestamp + "</td>\n" +
+                    "        <td class=\"indexRecipientId\">" + result.recipientId + "</td>\n" +
                     "        <td>" + result.asset.uiaTransfer.amountShow + "</td>\n" +
                     "    </tr>";
             });
@@ -84,7 +84,7 @@ $(document).ready(function () {
     $(".header-search").click(function () {
         var val = $(".header-input").val();
         if (val.length == 64) {
-            window.location.href = "record.html" + "git?" + "id" + "=" + val;
+            window.location.href = "particular.html" + "?" + "id" + "=" + val;
         } else if (val.length == 0) {
             layer.open({
                 title: '搜索栏为空',
@@ -101,7 +101,7 @@ $(document).ready(function () {
         if (event.keyCode == "13") {//判断如果按下的是回车键则执行下面的代码
             var val = $(".header-input").val();
             if (val.length == 64) {
-                window.location.href = "record.html" + "git?" + "id" + "=" + val;
+                window.location.href = "particular.html" + "?" + "id" + "=" + val;
             } else if (val.length == 0) {
                 layer.open({
                     title: '搜索栏为空',
@@ -113,5 +113,15 @@ $(document).ready(function () {
         }
     });
 
+    $(".record-table-tbody").find("tr .indexSenderId").click(function () {
+        var senderIdText = $(this).text();
+        senderIdText = senderIdText.replace(/\s+/g, "");
+        window.location.href = "record.html" + "?" + "val" + "=" + senderIdText;
+    });
+    $(".record-table-tbody").find("tr .indexRecipientId").click(function () {
+        var senderIdText = $(this).text();
+        senderIdText = senderIdText.replace(/\s+/g, "");
+        window.location.href = "record.html" + "?" + "val" + "=" + senderIdText;
+    });
 });
 

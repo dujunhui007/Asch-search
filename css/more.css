@@ -8,8 +8,6 @@
 
 .more-container header{
     width: 100%;
-    /*height: 200px;*/
-    /*background: cadetblue;*/
 }
 .more-container header .more-logo{
     display: block;
@@ -63,16 +61,20 @@
 }
 
 
-/*=================================================*/
 .more-container .more-table {
     width: 100%;
     margin-top: 10px;
     color: #ccc;
 }
 
-/*body{*/
-    /*android:descendantFocusability="afterDescendants"*/
-/*}*/
+
+.more-container .more-table tr td.moreSenderId{
+    cursor: pointer;
+}
+
+.more-container .more-table tr td.moreRecipientId{
+    cursor: pointer;
+}
 
 .more-container .more-table tr {
     width: 100%;
@@ -87,7 +89,7 @@
 .more-container .more-table tr td {
     font-size: 12px;
 }
-/*===========================================*/
+
 .more-container .pages{
     width: 100%;
     height: 30px;
@@ -148,7 +150,6 @@
     height: 25px;
     line-height: 25px;
     padding: 0 10px;
-    /* border: 1px solid #ddd; */
     margin: 0 2px;
     border-radius: 4px;
     vertical-align: middle;
@@ -157,7 +158,6 @@
 
 .tcdPageCode a:hover {
     text-decoration: none;
-    /*border: 1px solid #428bca;*/
 }
 
 .tcdPageCode span.current {

@@ -50,20 +50,13 @@
 }
 
 
-.particular-information ul {
-    /*border: 1px solid #1b1a20;*/
-}
 
 .particular-information ul li {
     height: 40px;
     text-align: right;
     line-height: 40px;
-    /* display: -webkit-flex;  新版本语法: Chrome 21+ */
-    display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
-    /* display: -webkit-box;   老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
-    /* display: -moz-box;      老版本语法: Firefox (buggy) */
-    /* display: -ms-flexbox; */
-    /*-webkit-box-pack: space-between;*/
+    display: -webkit-flex;
+    display: flex;
     -moz-justify-content: space-between;
     -webkit-justify-content: space-between;
     justify-content: space-between;

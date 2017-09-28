@@ -17,106 +17,15 @@
     <favorites_list name="Asch-search" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="record.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/record.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="339" column="87" lean-forward="false" selection-start-line="339" selection-start-column="87" selection-end-line="339" selection-end-column="87" />
-              <folding>
-                <element signature="e#137#763#0" expanded="false" />
-                <element signature="e#1028#1590#0" expanded="false" />
-                <element signature="e#2242#2515#0" expanded="false" />
-                <element signature="e#2726#2852#0" expanded="false" />
-                <element signature="e#5129#6159#0" expanded="false" />
-                <element signature="e#6352#8217#0" expanded="false" />
-                <element signature="e#9533#10048#0" expanded="false" />
-                <element signature="e#10113#10736#0" expanded="false" />
-                <element signature="e#10801#11146#0" expanded="false" />
-                <element signature="e#11214#11571#0" expanded="false" />
-                <element signature="e#12105#12373#0" expanded="false" />
-                <element signature="e#12742#13162#0" expanded="false" />
-                <element signature="e#13200#13339#0" expanded="false" />
-                <element signature="e#13456#13574#0" expanded="false" />
-                <element signature="e#13693#14153#0" expanded="false" />
-                <element signature="e#14206#14763#0" expanded="false" />
-                <element signature="e#14826#14878#0" expanded="false" />
-                <element signature="e#14922#15170#0" expanded="false" />
-                <element signature="e#15211#15436#0" expanded="false" />
-                <element signature="e#15480#15717#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/record.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="71" column="55" lean-forward="false" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
-              <folding>
-                <element signature="n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="more.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/more.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="more.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/more.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="e#471#1053#0" expanded="false" />
-                <element signature="e#1109#1481#0" expanded="false" />
-                <element signature="e#1508#1946#0" expanded="false" />
-                <element signature="e#2354#2735#0" expanded="false" />
-                <element signature="e#5150#5346#0" expanded="false" />
-                <element signature="e#6237#6787#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -125,6 +34,11 @@
       <find>tabStr</find>
       <find>clickCount</find>
       <find>createPage</find>
+      <find>nextPage</find>
+      <find>currentPage</find>
+      <find>currentVal</find>
+      <find>pageCount</find>
+      <find>parstInt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,9 +56,7 @@
         <option value="$PROJECT_DIR$/js/timestamp.js" />
         <option value="$PROJECT_DIR$/js/addImage.js" />
         <option value="$PROJECT_DIR$/mobile/need/layer.css" />
-        <option value="$PROJECT_DIR$/css/particular.css" />
         <option value="$PROJECT_DIR$/js/util.js" />
-        <option value="$PROJECT_DIR$/particular.html" />
         <option value="$PROJECT_DIR$/js/aaa.js" />
         <option value="$PROJECT_DIR$/theme/default/layer.css" />
         <option value="$PROJECT_DIR$/js/transaction-record.js" />
@@ -156,10 +68,6 @@
         <option value="$USER_HOME$/Desktop/JQ插件/jQueryPager20160918/index.html" />
         <option value="$USER_HOME$/Desktop/JQ插件/jQueryPager20160918/js/jquery.page.js" />
         <option value="$USER_HOME$/Desktop/JQ插件/jQueryPager20160918/JQpages.html" />
-        <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/more.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="C:/Asch-search-1/index.html" />
         <option value="$USER_HOME$/Desktop/JQ插件/pagination/pagination.html" />
         <option value="C:/Asch-search-1/more.html" />
@@ -167,14 +75,22 @@
         <option value="C:/Asch-search-1/css/more.css" />
         <option value="C:/Asch-search-1/more1.html" />
         <option value="C:/Asch-search-1/css/pagination.css" />
-        <option value="$PROJECT_DIR$/css/more.css" />
-        <option value="$PROJECT_DIR$/js/jquery.page.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/record.css" />
+        <option value="$PROJECT_DIR$/particular.html" />
         <option value="$PROJECT_DIR$/record.html" />
+        <option value="$PROJECT_DIR$/js/record2.js" />
+        <option value="$PROJECT_DIR$/js/jquery.page.js" />
         <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/js/more.js" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/css/more.css" />
+        <option value="$PROJECT_DIR$/css/particular.css" />
+        <option value="$PROJECT_DIR$/css/record.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/more.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/js/particular.js" />
         <option value="$PROJECT_DIR$/js/record.js" />
+        <option value="$PROJECT_DIR$/js/more.js" />
       </list>
     </option>
   </component>
@@ -194,7 +110,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="C:/Asch-Items/asch-frontend/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="175" />
     <option name="width" value="828" />
     <option name="height" value="362" />
@@ -214,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,49 +142,38 @@
               <item name="Asch-search" type="47feb1d3:ProjectViewModuleNode" />
               <item name="Asch-search" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Asch-search" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Asch-search" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Asch-search" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Asch-search" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Asch-search" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Asch-search" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Asch-search-1" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="rgb&#9;FILE&#9;file://C:/Asch-Items/asch-frontend/node_modules/gulp-scss/vendor/bundle/ruby/1.9.1/gems/sass-3.4.22/test/sass/data/hsl-rgb.txt&#10;slideInLeft&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="getInfo&#9;null&#9;null&#10;rgb&#9;FILE&#9;file://C:/Asch-Items/asch-frontend/node_modules/gulp-scss/vendor/bundle/ruby/1.9.1/gems/sass-3.4.22/test/sass/data/hsl-rgb.txt&#10;slideInLeft&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Asch-search\js" />
-      <recent name="C:\pagerDemo" />
-      <recent name="C:\Asch-search\images" />
-      <recent name="C:\Asch-search" />
-      <recent name="C:\Asch-search\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Asch-search\js" />
       <recent name="C:\Asch-search-1\js" />
       <recent name="C:\Asch-search-1\css" />
       <recent name="C:\" />
       <recent name="C:\Users\81074\Desktop\JQ插件\jQueryPager20160918\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Asch-search-1\css" />
+      <recent name="C:\Asch-search\js" />
+      <recent name="C:\pagerDemo" />
+      <recent name="C:\Asch-search\images" />
+      <recent name="C:\Asch-search" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,7 +192,7 @@
     <configuration name="aaa.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="aaa.js" working-dir="$PROJECT_DIR$/js" />
     <configuration name="common.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="common.js" working-dir="$PROJECT_DIR$/js" />
     <configuration name="jquery.page.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="jquery.page.js" working-dir="$PROJECT_DIR$/js" />
-    <configuration name="record.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="record.js" working-dir="$PROJECT_DIR$/js" />
+    <configuration name="record.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/js/record11.js" working-dir="$PROJECT_DIR$/js" />
     <configuration name="timestamp.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="timestamp.js" working-dir="$PROJECT_DIR$/js" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.timestamp.js" />
@@ -331,11 +235,12 @@
       <workItem from="1506305170885" duration="48294000" />
       <workItem from="1506427893889" duration="22133000" />
       <workItem from="1506478680492" duration="42479000" />
+      <workItem from="1506562895587" duration="45905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249904000" />
+    <option name="totallyTimeSpent" value="295809000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -347,8 +252,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -357,7 +261,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22857143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06026786" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18303572" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13392857" sideWeight="0.50576603" order="2" side_tool="true" content_ui="tabs" />
@@ -379,27 +283,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/pagerDemo/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2566">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/pages/说明.txt" />
-    <entry file="file://$USER_HOME$/Desktop/pages/说明.htm" />
-    <entry file="file://$USER_HOME$/Desktop/pages/css/pagination.css" />
-    <entry file="file://$USER_HOME$/Desktop/pages/css/reset.css" />
-    <entry file="file://$USER_HOME$/Desktop/pages/js/lib/jquery.min.js" />
-    <entry file="file://$USER_HOME$/Desktop/pages/js/jquery.pagination.js" />
-    <entry file="file://$USER_HOME$/Desktop/pageAjax/page/data/data.js" />
-    <entry file="file://$USER_HOME$/Desktop/pageAjax/page/js/page.js" />
     <entry file="file://$USER_HOME$/Desktop/pageAjax/page/page.html" />
     <entry file="file://$USER_HOME$/Desktop/pageAjax/page/js/sendAjax.js" />
     <entry file="file://$USER_HOME$/Desktop/pages/pages.html" />
@@ -407,7 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10080">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,15 +310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-739">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="135" column="1" lean-forward="true" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -439,7 +317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -447,15 +324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="197" column="20" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -463,9 +331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,9 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -483,7 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,7 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
           <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,15 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,13 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10">
           <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="e#398#498#0" expanded="false" />
-            <element signature="e#523#814#0" expanded="false" />
-            <element signature="e#845#930#0" expanded="false" />
-            <element signature="e#966#1296#0" expanded="false" />
-            <element signature="e#1333#1660#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,7 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -545,7 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-990">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,130 +485,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/particular.css">
+    <entry file="file://$PROJECT_DIR$/js/record3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/record11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="52" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Asch-search-1/css/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1183">
+          <caret line="76" column="6" lean-forward="false" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1333">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/more.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="220" selection-end-column="1" />
-          <folding>
-            <element signature="e#2873#2940#0" expanded="false" />
-            <element signature="e#2957#3196#0" expanded="false" />
-            <element signature="e#3219#3284#0" expanded="false" />
-            <element signature="e#3312#3554#0" expanded="false" />
-            <element signature="e#3582#3840#0" expanded="false" />
-            <element signature="e#3865#4123#0" expanded="false" />
-            <element signature="e#4157#4416#0" expanded="false" />
-            <element signature="e#4441#4700#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1453">
+          <caret line="159" column="26" lean-forward="false" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/particular.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-673">
+          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Asch-favicon1.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Asch-favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/record.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="250" column="15" lean-forward="false" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
+        <state relative-caret-position="197">
+          <caret line="302" column="22" lean-forward="false" selection-start-line="302" selection-start-column="22" selection-end-line="302" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/particular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/more.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="18" />
+        <state relative-caret-position="-1093">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/record.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="71" column="55" lean-forward="false" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+        <state relative-caret-position="317">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/more.js">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#471#1053#0" expanded="false" />
-            <element signature="e#1109#1481#0" expanded="false" />
-            <element signature="e#1508#1946#0" expanded="false" />
-            <element signature="e#2354#2735#0" expanded="false" />
-            <element signature="e#5150#5346#0" expanded="false" />
-            <element signature="e#6237#6787#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2443">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/particular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="103" column="7" lean-forward="false" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/record.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="339" column="87" lean-forward="false" selection-start-line="339" selection-start-column="87" selection-end-line="339" selection-end-column="87" />
+        <state relative-caret-position="170">
+          <caret line="146" column="23" lean-forward="false" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
           <folding>
-            <element signature="e#137#763#0" expanded="false" />
-            <element signature="e#1028#1590#0" expanded="false" />
-            <element signature="e#2242#2515#0" expanded="false" />
-            <element signature="e#2726#2852#0" expanded="false" />
-            <element signature="e#5129#6159#0" expanded="false" />
-            <element signature="e#6352#8217#0" expanded="false" />
-            <element signature="e#9533#10048#0" expanded="false" />
-            <element signature="e#10113#10736#0" expanded="false" />
-            <element signature="e#10801#11146#0" expanded="false" />
-            <element signature="e#11214#11571#0" expanded="false" />
-            <element signature="e#12105#12373#0" expanded="false" />
-            <element signature="e#12742#13162#0" expanded="false" />
-            <element signature="e#13200#13339#0" expanded="false" />
-            <element signature="e#13456#13574#0" expanded="false" />
-            <element signature="e#13693#14153#0" expanded="false" />
-            <element signature="e#14206#14763#0" expanded="false" />
-            <element signature="e#14826#14878#0" expanded="false" />
-            <element signature="e#14922#15170#0" expanded="false" />
-            <element signature="e#15211#15436#0" expanded="false" />
-            <element signature="e#15480#15717#0" expanded="false" />
+            <element signature="e#206#772#0" expanded="false" />
+            <element signature="e#1921#2047#0" expanded="false" />
+            <element signature="e#3346#5403#0" expanded="false" />
+            <element signature="e#6912#7083#0" expanded="false" />
+            <element signature="e#7139#8623#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#865#983#0" expanded="false" />
+            <element signature="e#1914#2065#0" expanded="false" />
+            <element signature="e#2103#3665#0" expanded="false" />
+            <element signature="e#3070#3306#0" expanded="false" />
+            <element signature="e#3395#3631#0" expanded="false" />
+            <element signature="e#4308#4496#0" expanded="false" />
+            <element signature="e#4573#4761#0" expanded="false" />
+            <element signature="e#4821#4873#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

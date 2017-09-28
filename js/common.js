@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // $('body').append('<span class="bacImage"></span>');
     $('#box').append('<span class="bacImage"></span>');
     $('#loading').hide()
 });
@@ -26,13 +25,14 @@ function formatDateTime(timeStamp) {
 }
 
 
+var urlBalances="http://45.32.254.236/api/uia/balances/";
+var urlAsset="http://45.32.254.236/api/uia/assets/ABSORB.YLB";
+var urlTransaction="http://45.32.254.236/api/uia/transactions/my/";
+var urlYLB="http://45.32.254.236/api/uia/transactions/ABSORB.YLB";
+var urlTransactionId="http://45.32.254.236/api/uia/transactions/";
+var currency="ABSORB.YLB";
 
 
-var url1="http://101.200.84.232:4097/api/uia/transactions/my/";
-var url2="http://mainnet.asch.so/api/transactions/get?id=";
-var url3="http://45.32.254.236/api/uia/assets/ABSORB.YLB";
-var url4="http://45.32.254.236/api/uia/transactions2/ABSORB.YLB";
-var url5="http://101.200.84.232:4097/api/uia/balances/";
 
 
 
